@@ -34,17 +34,7 @@
 	  </tr>
       <tr>
 		
-		<?php
 		
-		$sql ="SELECT * FROM `product` WHERE `id`='".$_GET['id']."'";	
-		$image="";		
-		$result = mysqli_query($db,$sql);
-		if(mysqli_num_rows($result)> 0)
-		{
-			
-			$row = mysqli_fetch_assoc($result);
-			$image  = $row['image'];	
-		?>
       <td colspan="2"><form  method="post" >
         ;
         <table width="438" border="0" align="center">
