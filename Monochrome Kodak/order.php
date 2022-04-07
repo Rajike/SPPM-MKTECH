@@ -91,8 +91,8 @@ if(!isset($_SESSION["member"]))
         <hr style="width: 30%;">
         
         <div class="mb-3" style=" display:flex; flex-direction:column; justify-content:center; margin-top: 20px; width: 30%;">
-          <h4 style="color: rgb(129, 129, 129);">Total Cost: </h4>
-          <h3 class="text-warning" id="price" name="price"></h3>
+          <h4 style="color: rgb(129, 129, 129);">Total Cost: </h2>
+          <input class="text-warning" type="text" id="price" name="price" readonly>
       </div>
 
         <input type="submit" id="btnSubmit" name="btnSubmit" value="Place Order" class="btn btn-warning text-light fw-bold">

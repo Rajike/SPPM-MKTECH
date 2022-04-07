@@ -46,7 +46,7 @@ if(!isset($_SESSION["member"]))
     <div class="container bg-light" style="display: flex; justify-content: center; margin:50px; padding:20px; border-radius: 20px;">
         <a href="userOrderView.php"><button class="btn btn-warning text-light fw-bold" style="margin: 5px;"><img src="../images/image-gallery.png" alt="Order View" style="width:50px; margin:5px">  Order View</button></a>
         <a href="updateUser.php"><button class="btn btn-warning text-light fw-bold" style="margin: 5px;" ><img src="../images/updating.png" alt="Order View" style="width:50px; margin:5px;">  Update Account</button></a>
-        <a href="logout.php"><button class="btn btn-warning text-light fw-bold" style="margin: 5px;" ><img src="../images/updating.png" alt="Order View" style="width:50px; margin:5px;">  Sign Out</button></a>
+        <a href="logout.php"><button class="btn btn-warning text-light fw-bold" style="margin: 5px;" ><img src="../images/logout2.png" alt="Order View" style="width:50px; margin:5px;">  Sign Out</button></a>
 
     </div>
     

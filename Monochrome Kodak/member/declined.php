@@ -48,7 +48,7 @@ if(!isset($_SESSION["member"]))
         <h1 class="col-3 text-warning">| Order View</h1> 
 
         <div class="col-9" style=" display:flex; justify-content: flex-end;">
-            <button class="btn btn-warning text-light" onclick="window.location.href = 'userOrderView.php';" style="margin: 5px;">All Orders</button>
+            <button class="btn btn-warning text-light" onclick="window.location.href = 'userOrderView.php';" style="margin: 5px;">Order Place</button>
             <button class="btn btn-warning text-light" onclick="window.location.href = 'accepted.php';" style="margin: 5px;">Accepted</button>
             <button class="btn btn-warning text-light" onclick="window.location.href = 'declined.php';" style="margin: 5px;">Decline</button>
             <button class="btn btn-warning text-light" onclick="window.location.href = 'completed.php';" style="margin: 5px;">Completed</button>
@@ -57,11 +57,11 @@ if(!isset($_SESSION["member"]))
     </div>
     <div class="row container bg-dark" style="margin: 50px; padding:20px; border-radius: 20px;">
 
-      <h1 class="col-3 text-warning">| My Orders</h1> 
+      <h1 class="col-3 text-warning">| Declined Orders</h1> 
     
       <?php 
 				
-                $sql ="SELECT * FROM `orders` WHERE `buyer`='".$_SESSION['member']."'";	
+        $sql ="SELECT * FROM `orders` WHERE `buyer`='".$_SESSION['member']."' AND `status` = 'declined'";	
                         
                 $result = mysqli_query($db,$sql);
                 if(mysqli_num_rows($result)> 0)
@@ -79,7 +79,6 @@ if(!isset($_SESSION["member"]))
                                   <td width="200" bgcolor="#0084FF">Instructions</td>
                                   <td width="200" bgcolor="#0084FF">Price</td>
                                   <td width="200" bgcolor="#0084FF">Status</td>
-                                  <td width="400" bgcolor="#0084FF">Sellers Message</td>
                               </tr>
                             <tr><td height="10"></td></tr>
                               <tr>
@@ -88,7 +87,6 @@ if(!isset($_SESSION["member"]))
                                   <td width="200"><?php echo $row['instructions']; ?></td>
                                   <td width="200"><?php echo $row['price']; ?></td>
                                   <td width="200"><?php echo $row['status']; ?></td>
-                                  <td width="400"><?php echo $row['sm']; ?></td>
                             </tr>
                           </table>
                       

@@ -6,7 +6,6 @@ window.onload=function(){
     var price = 0;
 
     const cost = document.getElementById('price');
-    cost.innerHTML = price;
 
     const frame = document.getElementById('frame');
 
@@ -70,7 +69,8 @@ window.onload=function(){
             }
         }
 
-        cost.innerHTML = price;
+        cost.setAttribute("placeholder", price)
+        cost.setAttribute("value", price)
     };
 
     print.addEventListener('change',getPrint);

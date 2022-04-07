@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 01, 2022 at 01:46 AM
+-- Generation Time: Apr 04, 2022 at 06:53 AM
 -- Server version: 8.0.18
 -- PHP Version: 7.3.12
 
@@ -92,15 +92,21 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `price` int(20) NOT NULL,
   `buyer` varchar(200) NOT NULL,
   `status` varchar(200) NOT NULL,
+  `sm` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `size`, `frame`, `image`, `instructions`, `price`, `buyer`, `status`) VALUES
-(2, '8x10', 'white', 'uploads/signature.png', 'dwadawdawddwa', 0, 'member@gmail.com', 'Processing');
+INSERT INTO `orders` (`id`, `size`, `frame`, `image`, `instructions`, `price`, `buyer`, `status`, `sm`) VALUES
+(2, '8x10', 'white', 'uploads/signature.png', 'dwadawdawddwa', 0, 'member@gmail.com', 'Completed', '231123213'),
+(3, '12x18', 'white', 'uploads/image-gallery.png', '1321312vfsffdfsf', 0, 'member@gmail.com', 'Declined', 'waddwadawdawdawd'),
+(4, '4x6', 'none', 'uploads/logout.png', 'fsefsefsefes', 1000, 'member@gmail.com', 'Processing', NULL),
+(5, '5x7', 'brown', 'uploads/black.jpg', 'large', 1000, 'member@gmail.com', 'Processing', NULL),
+(6, '4x6', 'borderless', 'uploads/black.webp', 'feska', 280, 'member@gmail.com', 'Processing', NULL),
+(7, '12x18', 'brown', 'uploads/brown.jpg', 'fawfawfawf', 810, 'kyte@gmail.com', 'Processing', NULL);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
