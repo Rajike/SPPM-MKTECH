@@ -6,6 +6,7 @@
     --primary-colour: rgb(255, 187, 0);
     --secondary-colour: rgb(37, 37, 37);
     --lightbg: rgb(238, 238, 238) ;
+    --grey-color: rgb(238, 238, 238);
 
 }
 
@@ -19,7 +20,8 @@ span{
 }
 
 td{
-    color:white;
+	color:white;
+	align-content: center;
 }
 
 li a{
@@ -35,3 +37,44 @@ li a{
     display: flex;
     flex-direction: column;
 }
+
+#price {
+    border: 0px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color:#f8f9fb ;
+    
+}
+
+.about .nav-pills .nav-link {
+    color: var(--grey-color);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0;
+    padding-right: 0;
+    border-bottom: 1px solid var(--grey-color);
+    text-align: center;
+    padding-right: 15px;
+  }
+  
+  .about .nav-pills .nav-link:hover,
+  .about .nav-pills .nav-link.active, 
+  .about .nav-pills .show>.nav-link {
+    background: transparent;
+    border-bottom-color: var(--primary-colour);
+    border-bottom-width: 1.5px;
+    color: var(--primary-colour);
+  }
+
+  span{
+      color: var(--primary-colour);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 198, 43);
+    border: 5px solid rgb(255, 198, 43);
+  }
