@@ -48,18 +48,17 @@ if(!isset($_SESSION["admin"]))
         <h1 class="col-3 text-warning">| Order View</h1> 
 
         <div class="col-9" style=" display:flex; justify-content: flex-end;">
-            <button class="btn btn-warning text-dark" onclick="window.location.href = 'adminOrders.php';" style="margin: 5px;">Order Place</button>
-            <button class="btn btn-warning text-dark" onclick="window.location.href = 'accepted.php';" style="margin: 5px;">Accepted</button>
-            <button class="btn btn-warning text-dark" onclick="window.location.href = 'declined.php';" style="margin: 5px;">Decline</button>
-            <button class="btn btn-warning text-dark" onclick="window.location.href = 'completed.php';" style="margin: 5px;">Completed</button>
+            <button class="btn btn-warning text-light" onclick="window.location.href = 'adminOrders.php';" style="margin: 5px;">All Orders</button>
+            <button class="btn btn-warning text-light" onclick="window.location.href = 'accepted.php';" style="margin: 5px;">Accepted</button>
+            <button class="btn btn-warning text-light" onclick="window.location.href = 'declined.php';" style="margin: 5px;">Declined</button>
+            <button class="btn btn-warning text-light" onclick="window.location.href = 'completed.php';" style="margin: 5px;">Completed</button>
         </div>
 
     </div>
 
     <div class="row container bg-dark" style="margin: 50px; padding:20px; border-radius: 20px;">
 
-      <h1 class="col-3 text-warning">| All Orders</h1> 
-
+      <h1 class="col-3 text-warning">| Completed</h1> 
       <table align="center">
                   
                   <tr align="center" >
@@ -76,7 +75,7 @@ if(!isset($_SESSION["admin"]))
          </table>
       <?php 
 				
-      $sql ="SELECT * FROM `orders` ";	
+      $sql ="SELECT * FROM `orders` WHERE `status` = 'completed' ";	
               
       $result = mysqli_query($db,$sql);
       if(mysqli_num_rows($result)> 0)

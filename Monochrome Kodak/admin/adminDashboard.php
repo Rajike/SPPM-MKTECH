@@ -48,7 +48,7 @@ if(!isset($_SESSION["admin"]))
 
         <a href="adminOrders.php"><button class="btn btn-warning text-dark fw-bold" style="margin: 5px;"><img src="../images/image-gallery (1).png" alt="Order View" style="width:50px; margin:5px">  Order View</button></a>
         <a href="adminMembers.php"><button class="btn btn-warning text-dark fw-bold" style="margin: 5px;"><img src="../images/user.png" alt="Order View" style="width:50px; margin:5px;">  View Members</button></a>
-        <a href="logout.php"><button class="btn btn-warning text-dark fw-bold" style="margin: 5px;"><img src="../images/user.png" alt="Order View" style="width:50px; margin:5px;">  Sign Out</button></a>
+        <a href="logout.php"><button class="btn btn-warning text-dark fw-bold" style="margin: 5px;"><img src="../images/logout.png" alt="Order View" style="width:50px; margin:5px;">  Sign Out</button></a>
 
     </div>
 

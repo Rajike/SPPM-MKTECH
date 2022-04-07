@@ -49,7 +49,14 @@ if(!isset($_SESSION["admin"]))
 
         <form action="" method="post">
 
-        
+        <table align="center">
+                  <tr>
+                    <td width="200" bgcolor="#ffbb00">Name</td>
+                    <td width="200" bgcolor="#ffbb00">Email</td>
+                    <td width="200" bgcolor="#ffbb00">Phone Number</td>
+                    <td width="400" bgcolor="#ffbb00">Address</td>	
+                  </tr>
+            </table>      
 				
           <?php 
               
@@ -63,19 +70,15 @@ if(!isset($_SESSION["admin"]))
                       
               ?>
               
-                <table>
+
+            <table align="center">
                   <tr>
-                    <td width="100" bgcolor="#ffbb00">Name</td>
-                    <td width="200" bgcolor="#ffbb00">Email</td>
-                  <td width="100" bgcolor="#ffbb00">Phone Number</td>
-                  <td width="300" bgcolor="#ffbb00">Address</td>	
-                  </tr>
-                  <tr>
-                  <td color="#FFFFFF"width="100"><?php echo $row['name']; ?></td>
-                    <td width="200"><?php echo $row['email']; ?></td>
-                  <td width="100"><?php echo $row['phone']; ?></td>
-                  <td width="300"><?php echo $row['address']; ?>,<?php echo $row['city']; ?>,<?php echo $row['zip']; ?></td>	
+                  <td width="200"><?php echo $row['name']; ?></td>
+                  <td width="200"><?php echo $row['email']; ?></td>
+                  <td width="200"><?php echo $row['phone']; ?></td>
+                  <td width="400"><?php echo $row['address']; ?>,<?php echo $row['city']; ?>,<?php echo $row['zip']; ?></td>	
                 </tr>
+                <tr height="20">
                 </table>
               
               <?php

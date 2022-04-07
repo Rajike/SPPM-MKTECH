@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,10 +26,10 @@
               <a class="nav-link" href="../products.html">Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active text-warning" href="adminDashboard.html">Dash Board</a>
+                <a class="nav-link active text-warning" href="adminDashboard.php">Dash Board</a>
               </li>
             <div class="d-flex">
-              <a href="../order.html"><button type="button" class="btn btn-warning text-light" style="margin-left: 10px;">Order Now</button></a>
+              <a href="../order.php"><button type="button" class="btn btn-warning text-light" style="margin-left: 10px;">Order Now</button></a>
             </div>
           </ul>
         </div>
